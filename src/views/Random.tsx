@@ -1,4 +1,3 @@
-// src/components/Random.tsx
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { addRandom } from "../store/Reducer/Random";
