@@ -1,12 +1,9 @@
-// src/components/ThemeSwitcher.tsx
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../store/Reducer/rootReducer";
-
 export default function ThemeSwitcher() {
   const dispatch = useDispatch();
   const darkMode = useSelector((state: RootState) => state.Theme.darkMode);
-
   const handleToggle = (e: React.ChangeEvent<HTMLInputElement>) => {
     dispatch({ type: "TOGGLE_THEME", payload: e.target.checked });
   };
