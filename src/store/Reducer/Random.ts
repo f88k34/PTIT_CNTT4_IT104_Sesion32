@@ -1,4 +1,3 @@
-// store/Reducer/Random.ts
 export const ADD_RANDOM = "ADD_RANDOM";
 
 export const addRandom = (num: number) => ({
