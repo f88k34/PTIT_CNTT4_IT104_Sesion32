@@ -1,8 +1,7 @@
 import { useSelector } from "react-redux";
-import type { RootState } from "../store/store"; // import RootState từ store
+import type { RootState } from "../store/store"
 
 export default function Student() {
-  // Lấy danh sách users từ Redux state
   const users = useSelector((state: RootState) => state.students.users);
 
   return (
