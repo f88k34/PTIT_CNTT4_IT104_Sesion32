@@ -1,15 +1,12 @@
-// src/components/Register.tsx
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { registerUser } from "../store/Reducer/AuthAction";
-
 export default function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();
   const navigate = useNavigate();
-
   const handleRegister = (e: React.FormEvent) => {
     e.preventDefault();
     dispatch(registerUser({ email, password }));
